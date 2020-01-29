@@ -317,7 +317,7 @@ class Facet:
     def __hash__(self):
         return hash(self.halfedge) ^ hash(self.a) ^ hash(self.b) ^ \
             hash(self.c) ^ hash(self.index) ^ \
-            hash((self.halfedges, self.a, self.b, self.c, self.index))
+            hash((self.halfedge, self.a, self.b, self.c, self.index))
 
     def get_normal(self):
         """Calculate the normal of facet
