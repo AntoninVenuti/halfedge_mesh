@@ -23,7 +23,8 @@ Here I run through some basic manipulations of a mesh.
     mesh.halfedges[10]
 
     # Get the halfedge that starts at vertex 25 and ends at vertex 50
-    mesh.get_halfedge(25, 50)
+    # will not work with a random mesh
+    # mesh.get_halfedge(25, 50)
     
     # Iterate over the vertices of the mesh
     for i in mesh.vertices:
